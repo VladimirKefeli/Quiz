@@ -6,5 +6,5 @@
 //
 
 enum ResponseType {
-    case single, multiplay, range
+    case single, multiple, range
 }

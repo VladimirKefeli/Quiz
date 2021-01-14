@@ -11,15 +11,15 @@ struct Question {
     let answers: [Answer]
     
     static let all: [Question] = [
-        Question(text: "Какую валюту Вы предпочитаете", type: .single, answers: [
+        Question(text: "Какую валюту Вы предпочитаете?", type: .single, answers: [
             Answer(text: "Рубль", name: .russia),
-            Answer(text: "Доллар США", name: .usa),
+            Answer(text: "Доллар", name: .usa),
             Answer(text: "Евро", name: .germany),
             Answer(text: "Йена", name: .japan),
             Answer(text: "Гривна", name: .ukraine),
             Answer(text: "Фунт Стерлингов", name: .greatBritain),
         ]),
-        Question(text: "Ваше любимый напиток", type: .multiplay, answers: [
+        Question(text: "Ваш любимый напиток?", type: .multiple, answers: [
             Answer(text: "Квас", name: .russia),
             Answer(text: "Чай", name: .greatBritain),
             Answer(text: "Медовуха", name: .ukraine),
@@ -27,7 +27,7 @@ struct Question {
             Answer(text: "Зелёный чай", name: .japan),
             Answer(text: "Пиво", name: .germany),
         ]),
-        Question(text: "Как Вы относитесь к экологии", type: .range, answers: [
+        Question(text: "Как Вы относитесь к экологии?", type: .range, answers: [
             Answer(text: "Полностью безразлично", name: .ukraine),
             Answer(text: "Безразлично", name: .russia),
             Answer(text: "Нейтрально", name: .usa),

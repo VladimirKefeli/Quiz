@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="i6i-b2-ovD">
             <objects>
-                <viewController id="UDN-zj-6Lm" sceneMemberID="viewController">
+                <viewController id="UDN-zj-6Lm" customClass="QuestionViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f7J-tx-LjU">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,31 +222,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PFh-yH-UEa">
-                                <rect key="frame" x="172" y="317" width="46" height="220"/>
+                                <rect key="frame" x="180" y="317" width="30" height="220"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-8N-bmc">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlX-XU-N7w">
-                                        <rect key="frame" x="0.0" y="38" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="38" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-XG-3N7">
-                                        <rect key="frame" x="0.0" y="76" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="76" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faK-QC-s9M">
-                                        <rect key="frame" x="0.0" y="114" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="114" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1u-LV-PX6">
-                                        <rect key="frame" x="0.0" y="152" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="152" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lce-Ik-8Sw">
-                                        <rect key="frame" x="0.0" y="190" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="190" width="30" height="30"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -278,6 +272,25 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="QJn-9F-qZ4" id="6WD-Kd-SIJ"/>
+                        <outlet property="questionLabel" destination="gJg-L3-Wet" id="cbQ-hR-i4v"/>
+                        <outlet property="questionProgressView" destination="THc-8g-fzQ" id="Uhp-Ma-d6o"/>
+                        <outlet property="rangedStackView" destination="EiQ-eV-FaS" id="7E2-WO-klB"/>
+                        <outlet property="singleStackView" destination="PFh-yH-UEa" id="1xK-Xw-9GV"/>
+                        <outletCollection property="singleButtons" destination="1pZ-8N-bmc" collectionClass="NSMutableArray" id="ZVa-fD-XF4"/>
+                        <outletCollection property="singleButtons" destination="dlX-XU-N7w" collectionClass="NSMutableArray" id="CRw-zK-ZcU"/>
+                        <outletCollection property="singleButtons" destination="kWU-XG-3N7" collectionClass="NSMutableArray" id="iUQ-et-MsZ"/>
+                        <outletCollection property="singleButtons" destination="faK-QC-s9M" collectionClass="NSMutableArray" id="hiM-0I-NeH"/>
+                        <outletCollection property="singleButtons" destination="E1u-LV-PX6" collectionClass="NSMutableArray" id="vby-6b-TNd"/>
+                        <outletCollection property="singleButtons" destination="lce-Ik-8Sw" collectionClass="NSMutableArray" id="adU-wq-ARa"/>
+                        <outletCollection property="multiLabels" destination="koc-Wi-Fr9" collectionClass="NSMutableArray" id="cqj-ES-lv6"/>
+                        <outletCollection property="multiLabels" destination="3WZ-jS-XtQ" collectionClass="NSMutableArray" id="Yx4-6h-P7P"/>
+                        <outletCollection property="multiLabels" destination="gMN-3a-ZOA" collectionClass="NSMutableArray" id="BKG-0h-iw4"/>
+                        <outletCollection property="multiLabels" destination="SD8-OG-oIg" collectionClass="NSMutableArray" id="UoF-2c-6y7"/>
+                        <outletCollection property="multiLabels" destination="l5h-XT-8rB" collectionClass="NSMutableArray" id="KR0-sO-4Sm"/>
+                        <outletCollection property="multiLabels" destination="bzK-wv-2zt" collectionClass="NSMutableArray" id="DjG-tL-SMW"/>
+                        <outletCollection property="rangedLabels" destination="FEh-79-zRt" collectionClass="NSMutableArray" id="dCK-Db-Tno"/>
+                        <outletCollection property="rangedLabels" destination="crK-Zc-u7M" collectionClass="NSMutableArray" id="95V-RF-nyq"/>
                         <segue destination="66r-RQ-p7s" kind="show" id="GsB-I9-0da"/>
                     </connections>
                 </viewController>
@@ -353,7 +366,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s4m-t1-BCJ"/>
+        <segue reference="GsB-I9-0da"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
