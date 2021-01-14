@@ -9,16 +9,10 @@ enum CountryName: Character {
     case russia = "🇷🇺"
     case usa = "🇺🇸"
     case germany = "🇩🇪"
-    case france = "🇫🇷"
-    case canada = "🇨🇦"
     case japan = "🇯🇵"
-    case australia = "🇦🇺"
-    case italy = "🇮🇹"
-    case mexico = "🇲🇽"
-    case ireland = "🇮🇪"
+    case ukraine = "🇺🇦"
     case greatBritain = "🇬🇧"
-    case israel = "🇮🇱"
-    case turkey = "🇹🇷"
+    
     
     var definition: String {
         switch self {
@@ -28,26 +22,13 @@ enum CountryName: Character {
             return "Соединённые Штаты Америки"
         case .germany:
             return "Германия"
-        case .france:
-            return "Франция"
-        case .canada:
-            return "Канада"
         case .japan:
             return "Япония"
-        case .australia:
-            return "Австралия"
-        case .italy:
-            return "Италия"
-        case .mexico:
-            return "Мексика"
-        case .ireland:
-            return "Ирландия"
+        case .ukraine:
+            return "Украина"
         case .greatBritain:
             return "Великобритания"
-        case .israel:
-            return ""
-        case .turkey:
-            return ""
+        
             
         }
     }
