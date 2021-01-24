@@ -19,6 +19,11 @@
 		DB3B2A9725AF4D5600812960 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3B2A9625AF4D5600812960 /* ResponseType.swift */; };
 		DB3B2A9A25AF4E5800812960 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3B2A9925AF4E5800812960 /* Answer.swift */; };
 		DB3B2A9D25AF4FAB00812960 /* CountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3B2A9C25AF4FAB00812960 /* CountryName.swift */; };
+		DB66CC6325BDBB5300CBC8BB /* Screenshot04.png in Resources */ = {isa = PBXBuildFile; fileRef = DB66CC5E25BDBB5200CBC8BB /* Screenshot04.png */; };
+		DB66CC6425BDBB5300CBC8BB /* Screenshot05.png in Resources */ = {isa = PBXBuildFile; fileRef = DB66CC5F25BDBB5200CBC8BB /* Screenshot05.png */; };
+		DB66CC6525BDBB5300CBC8BB /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = DB66CC6025BDBB5200CBC8BB /* Screenshot02.png */; };
+		DB66CC6625BDBB5300CBC8BB /* Screenshot03.png in Resources */ = {isa = PBXBuildFile; fileRef = DB66CC6125BDBB5200CBC8BB /* Screenshot03.png */; };
+		DB66CC6725BDBB5300CBC8BB /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = DB66CC6225BDBB5200CBC8BB /* Screenshot01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		DB3B2A9625AF4D5600812960 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		DB3B2A9925AF4E5800812960 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		DB3B2A9C25AF4FAB00812960 /* CountryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryName.swift; sourceTree = "<group>"; };
+		DB66CC5E25BDBB5200CBC8BB /* Screenshot04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot04.png; sourceTree = "<group>"; };
+		DB66CC5F25BDBB5200CBC8BB /* Screenshot05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot05.png; sourceTree = "<group>"; };
+		DB66CC6025BDBB5200CBC8BB /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		DB66CC6125BDBB5200CBC8BB /* Screenshot03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot03.png; sourceTree = "<group>"; };
+		DB66CC6225BDBB5200CBC8BB /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			children = (
 				DB3B2A8E25AF47EC00812960 /* App */,
 				DB3B2A8C25AF46B700812960 /* Models */,
+				DB66CC5D25BDBB5200CBC8BB /* Screenshots */,
 				DB3B2A8D25AF475600812960 /* View */,
 				DB3B2A8625AF318300812960 /* View Controllers */,
 			);
@@ -115,6 +126,18 @@
 				DB3B2A7B25AF1F3C00812960 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DB66CC5D25BDBB5200CBC8BB /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				DB66CC6225BDBB5200CBC8BB /* Screenshot01.png */,
+				DB66CC6025BDBB5200CBC8BB /* Screenshot02.png */,
+				DB66CC6125BDBB5200CBC8BB /* Screenshot03.png */,
+				DB66CC5E25BDBB5200CBC8BB /* Screenshot04.png */,
+				DB66CC5F25BDBB5200CBC8BB /* Screenshot05.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB3B2A7A25AF1F3C00812960 /* LaunchScreen.storyboard in Resources */,
+				DB66CC6325BDBB5300CBC8BB /* Screenshot04.png in Resources */,
+				DB66CC6725BDBB5300CBC8BB /* Screenshot01.png in Resources */,
 				DB3B2A7725AF1F3C00812960 /* Assets.xcassets in Resources */,
+				DB66CC6425BDBB5300CBC8BB /* Screenshot05.png in Resources */,
 				DB3B2A7525AF1F3000812960 /* Main.storyboard in Resources */,
+				DB66CC6625BDBB5300CBC8BB /* Screenshot03.png in Resources */,
+				DB66CC6525BDBB5300CBC8BB /* Screenshot02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
